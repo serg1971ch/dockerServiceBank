@@ -1,0 +1,20 @@
+spring:
+  liquibase:
+    change-log: classpath:/liquibase/changelog-master-test.yml
+  #    enabled: false
+  datasource:
+        driverClassName: org.postgresql.Driver
+        url: jdbc:postgresql://localhost:5432/testdb
+        username: usr
+        password: pwd
+  # в корне проект файл бд db.mv.db
+
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+        ddl-auto:
+          create-drop
+  h2:
+    console:
+      enabled: true

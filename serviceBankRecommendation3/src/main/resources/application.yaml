@@ -1,0 +1,25 @@
+server:
+  port: 8082
+
+spring:
+  h2:
+     console.enabled: true
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/recommendation
+    username: postgres
+    password: 1234
+
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto:
+        create-drop
+
+  liquibase:
+    change-log: classpath:/liquibase/changelog-master.yml
+
+logging:
+  level:
+    ROOT: INFO
