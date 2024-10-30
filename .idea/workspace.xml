@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bb3c2120-cadf-4319-966b-d0fcc39e7188" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/serviceBankRecommendation3/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serviceBankRecommendation3/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serviceBankRecommendation3/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serviceBankRecommendation3/compose.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serviceBankRecommendation3/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serviceBankRecommendation3/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serviceBankRecommendation3/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serviceBankRecommendation3/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serviceBankRecommendation3/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serviceBankRecommendation3/src/main/java/ru/skyPro/serviceBankRecommendation3/ServiceBankRecommendation3Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serviceBankRecommendation3/src/main/java/ru/skyPro/serviceBankRecommendation3/configuration/AppProperties.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serviceBankRecommendation3/src/main/java/ru/skyPro/serviceBankRecommendation3/configuration/RecommendationsDataSourceConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serviceBankRecommendation3/src/main/java/ru/skyPro/serviceBankRecommendation3/controller/RecommendationController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serviceBankRecommendation3/src/main/java/ru/skyPro/serviceBankRecommendation3/controller/RecommendationUserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serviceBankRecommendation3/src/main/java/ru/skyPro/serviceBankRecommendation3/dto/RuleDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serviceBankRecommendation3/src/main/java/ru/skyPro/serviceBankRecommendation3/exceptions/RecommendBankException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serviceBankRecommendation3/src/main/java/ru/skyPro/serviceBankRecommendation3/model/BankRecommendationRule.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serviceBankRecommendation3/src/main/java/ru/skyPro/serviceBankRecommendation3/model/ClientRecommendation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serviceBankRecommendation3/src/main/java/ru/skyPro/serviceBankRecommendation3/model/rulesEntity/Recommendation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serviceBankRecommendation3/src/main/java/ru/skyPro/serviceBankRecommendation3/model/rulesEntity/Rule.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serviceBankRecommendation3/src/main/java/ru/skyPro/serviceBankRecommendation3/repository/RecommendationRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serviceBankRecommendation3/src/main/java/ru/skyPro/serviceBankRecommendation3/repository/RecommendationsRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serviceBankRecommendation3/src/main/java/ru/skyPro/serviceBankRecommendation3/repository/RuleRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serviceBankRecommendation3/src/main/java/ru/skyPro/serviceBankRecommendation3/service/CombinerQueryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serviceBankRecommendation3/src/main/java/ru/skyPro/serviceBankRecommendation3/service/RecommendationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serviceBankRecommendation3/src/main/java/ru/skyPro/serviceBankRecommendation3/service/RecommendationsServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serviceBankRecommendation3/src/main/java/ru/skyPro/serviceBankRecommendation3/util/ConstantQueriesOperation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serviceBankRecommendation3/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serviceBankRecommendation3/src/main/resources/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serviceBankRecommendation3/src/main/resources/liquibase/changelog-master.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serviceBankRecommendation3/src/main/resources/liquibase/scripts/dynamicsRules.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serviceBankRecommendation3/src/test/java/ru/skyPro/serviceBankRecommendation3/UserRepositoryTCLiveTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serviceBankRecommendation3/src/test/resources/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serviceBankRecommendation3/src/test/resources/liquibase/changelog-master-test.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serviceBankRecommendation3/src/test/resources/liquibase/scripts/dynamicsRulesTest.sql" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/serviceBankRecommendation3">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "serg1971ch"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:serg1971ch/dockerServiceBank.git",
+    "accountId": "e6017f17-22b6-4f4c-9bca-df8a98980c29"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2o9e5a7lnWCnIXT4GrvfZtGSU43" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build serviceBankRecommendation3.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.ServiceBankRecommendation3Application.executor": "Run",
+    "git-widget-placeholder": "test",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Honor/Desktop/serviceBankRecommendation3",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="ServiceBankRecommendation3Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="serviceBankRecommendation3.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.skyPro.serviceBankRecommendation3.ServiceBankRecommendation3Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bb3c2120-cadf-4319-966b-d0fcc39e7188" name="Changes" comment="" />
+      <created>1730286036124</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730286036124</updated>
+      <workItem from="1730286037273" duration="297000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
