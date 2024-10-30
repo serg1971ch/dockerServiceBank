@@ -3,12 +3,14 @@ package ru.skyPro.serviceBankRecommendation3;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
-import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.util.TestPropertyValues;
 import org.springframework.boot.test.web.client.TestRestTemplate;
+import org.springframework.context.ApplicationContextInitializer;
+import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
+import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.DynamicPropertyRegistry;
 import org.springframework.test.context.DynamicPropertySource;
 import org.testcontainers.containers.PostgreSQLContainer;
@@ -20,10 +22,10 @@ import ru.skyPro.serviceBankRecommendation3.service.RecommendationsServiceImpl;
 
 import java.util.UUID;
 @DataJpaTest
-@AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
 @Testcontainers
+@ContextConfiguration(initializers = {UserFirstContainerTest.Initializer.class})
 //@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-public class UserRepositoryTCLiveTest  {
+public class UserFirstContainerTest {
     @Autowired
     private TestRestTemplate restTemplate;
 
@@ -34,14 +36,17 @@ public class UserRepositoryTCLiveTest  {
     private RecommendationsServiceImpl recommendationService;
 
 @Container
-static PostgreSQLContainer<?> postgres = new PostgreSQLContainer<>("postgres:13");
+ public static PostgreSQLContainer<?> postgreSQLContainer = new PostgreSQLContainer<>("postgres:13")
+        .withDatabaseName("testdb")
+        .withUsername("usr")
+        .withPassword("pwd");
 
-    @DynamicPropertySource
-    static void configureProperties(DynamicPropertyRegistry registry) {
-        registry.add("spring.datasource.url", postgres::getJdbcUrl);
-        registry.add("spring.datasource.username", postgres::getUsername);
-        registry.add("spring.datasource.password", postgres::getPassword);
-    }
+//    @DynamicPropertySource
+//    static void configureProperties(DynamicPropertyRegistry registry) {
+//        registry.add("spring.datasource.url", postgres::getJdbcUrl);
+//        registry.add("spring.datasource.username", postgres::getUsername);
+//        registry.add("spring.datasource.password", postgres::getPassword);
+//    }
 
 //    @Test
 //    @Transactional
@@ -71,14 +76,15 @@ static PostgreSQLContainer<?> postgres = new PostgreSQLContainer<>("postgres:13"
 
     }
 
-//    static class Initializer
-//            implements ApplicationContextInitializer<ConfigurableApplicationContext> {
-//        public void initialize(ConfigurableApplicationContext configurableApplicationContext) {
-//            TestPropertyValues.of(
-//                    "spring.datasource.url=" + postgreSQLContainer.getJdbcUrl(),
-//                    "spring.datasource.username=" + postgreSQLContainer.getUsername(),
-//                    "spring.datasource.password=" + postgreSQLContainer.getPassword()
-//            ).applyTo(configurableApplicationContext.getEnvironment());
-//        }
-//    }
+    static class Initializer implements ApplicationContextInitializer<ConfigurableApplicationContext> {
+        public void initialize(ConfigurableApplicationContext configurableApplicationContext) {
+            TestPropertyValues.of(
+                    "spring.datasource.url=" + postgreSQLContainer.getJdbcUrl(),
+                    "spring.datasource.username=" + postgreSQLContainer.getUsername(),
+                    "spring.datasource.password=" + postgreSQLContainer.getPassword(),
+                    "spring.liquibase.enabled=true"
+            ).applyTo(configurableApplicationContext.getEnvironment());
+        }
+    }
+
 }

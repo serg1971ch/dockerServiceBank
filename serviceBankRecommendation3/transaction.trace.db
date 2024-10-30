@@ -1,0 +1,3 @@
+2024-10-30 14:21:02.919698+03:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found (this database is empty); SQL statement:
+select*from users [42104-224]
